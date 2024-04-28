@@ -16,8 +16,9 @@ import dashboard from  '@images/commercial flooring/JMB.A.COM07.jpg';
 import PricingSection from "@components/sections/pricing/PricingSection.astro";
 import FAQ from "@components/sections/FAQ.astro";
 import { Image } from 'astro:assets';
-
-
+import HeadshotPrice from "@/components/headshot-price.astro";
+import HeadshotHero from "@/components/headshot-hero.astro";
+import Webflow from "@/components/webflow.astro";
 const avatarSrcs: Array<string> = [
   "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
   "https://images.unsplash.com/photo-1531927557220-a9e23c1e4794?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
@@ -43,6 +44,12 @@ const avatarSrcs: Array<string> = [
    
     alt="Commercial flooring installation in progress"
   />
+  <HeadshotPrice />
+  
+  <HeadshotHero />
+  
+  <Webflow />
+  
 
   <FeaturesGeneral
     title="Why Choose JMB Floors?"
@@ -57,9 +64,9 @@ const avatarSrcs: Array<string> = [
     testimonials={[
       {
         content:
-          "ABC Company exceeded our expectations with their professional installation and high-quality flooring. Our office has never looked better!",
+          "JMBFlooring has been exceeded our expectations with their professional installation and high-quality flooring. Our office has never looked better!",
         author: "John Smith",
-        role: "XYZ Corporation",
+        role: "Project Manager",
         avatarSrc: "https://randomuser.me/api/portraits/men/1.jpg",
       },
     ]}
@@ -76,7 +83,7 @@ const avatarSrcs: Array<string> = [
     <h2 class="mb-8 text-3xl font-bold">Our Process</h2>
     <!-- Add a section describing JMB Floors' process, from consultation to installation and beyond -->
   </section>
-
+ 
   <FAQ 
     title="Frequently Asked Questions"
     subTitle="Have questions? We've got answers."
@@ -92,5 +99,8 @@ const avatarSrcs: Array<string> = [
       <a href="/contact" class="btn btn-primary">Contact Us</a>
     </div>
   </section>
+  </section>
+  
+
   
 </MainLayout>
